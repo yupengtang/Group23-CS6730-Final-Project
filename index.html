@@ -37,48 +37,75 @@
 
 		<!-- Intro -->
 		<section
-			class="banner style1 orient-left content-align-left image-position-right onload-image-fade-in onload-content-fade-right">
-			<div class="content" style="display: grid; place-items: center; height: 130vh;">
+			class="banner style1 orient-left content-align-left image-position-right onload-image-fade-in onload-content-fade-right"
+			style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
+			<div class="content" style="flex: 1; text-align: left;">
 				<h2 style="font-size: 40px; position: relative; top: -150px; margin-bottom: -80px;">Overview of Global
-					Carbon Emissions (tCO₂/person,
-					MtCO₂, kgCO₂/GDP)</h2>
-				<p style="font-size: 20px;">Carbon emissions define the trajectory of climate change, but their sources
-					are far from evenly
-					distributed.
+					Carbon Emissions (tCO₂/person, MtCO₂, kgCO₂/GDP)</h2>
+				<p style="font-size: 20px;">Carbon emissions play a critical role in shaping the trajectory of climate
+					change. However, their sources and magnitudes are far from evenly distributed across the globe,
+					resulting in stark disparities that reflect differences in economic development, population size,
+					and energy use.</p>
+				<p style="font-size: 20px;">The Choropleth Map on the right provides a country-level view of carbon
+					emissions intensity. By visualizing emissions per capita, per GDP, or total emissions, users can
+					identify patterns that highlight high-emission regions, such as industrialized nations with large
+					populations like China, the United States, and India. Meanwhile, smaller or less industrialized
+					nations often have significantly lower emissions.</p>
+				<p style="font-size: 20px;">Complementing this, the Symbol Map offers a more granular perspective by
+					using circles to represent emission volumes. The size and intensity of the circles reflect the
+					magnitude of emissions, making it easy to spot major contributors and regional hotspots at a glance.
 				</p>
-				<p style="font-size: 20px;">The map illustrates the stark differences in emissions across the globe.
-					Countries like China, the
-					United States, and India stand out as major contributors to global warming due to their
-					industrialized economies and large populations. In contrast, smaller or less industrialized nations
-					emit significantly less.
-				</p>
-				<p style="font-size: 20px;">By selecting metrics such as emissions per capita, per GDP, or total
-					emissions, the map unveils a
-					layered understanding of these disparities. The time slider brings the evolution of emissions to
-					life, showing how the global carbon landscape has shifted over decades.</p>
+				<p style="font-size: 20px;">Together, these visualizations provide a layered understanding of carbon
+					emissions across metrics and time. The interactive time slider enables users to explore trends over
+					decades, showcasing the evolution of emissions and how global patterns have shifted in response to
+					population growth, policy changes, and technological advancements. Use the Metric Selector to
+					customize the view and uncover deeper insights into the global carbon footprint.</p>
 			</div>
 
-			<div class='tableauPlaceholder' style='width:100%; height:calc(100vw * 0.75);' id='viz1732090144639'
-				style='position: relative'><noscript><a href='#'><img alt='Global Carbon Emissions '
-							src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalCarbonEmissions_17320899657560&#47;MapView&#47;1_rss.png'
-							style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-					<param name='embed_code_version' value='3' />
-					<param name='site_root' value='' />
-					<param name='name' value='GlobalCarbonEmissions_17320899657560&#47;MapView' />
-					<param name='tabs' value='no' />
-					<param name='toolbar' value='yes' />
-					<param name='static_image'
-						value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalCarbonEmissions_17320899657560&#47;MapView&#47;1.png' />
-					<param name='animate_transition' value='yes' />
-					<param name='display_static_image' value='yes' />
-					<param name='display_spinner' value='yes' />
-					<param name='display_overlay' value='yes' />
-					<param name='display_count' value='yes' />
-					<param name='language' value='en-US' />
-				</object></div>
-			<script
-				type='text/javascript'>                    var divElement = document.getElementById('viz1732090144639'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			<div class="charts" style="flex: 2; display: flex; flex-direction: column; gap: 20px;">
+				<div class='tableauPlaceholder' style='width:100%; height:calc(100vw * 0.75);' id='viz1732621703962'
+					style='position: relative'><noscript><a href='#'><img
+								alt='Global Carbon Emissions (Choropleth Map) '
+								src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalCarbonEmissionsChoroplethMap&#47;ChoroplethMap&#47;1_rss.png'
+								style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+						<param name='embed_code_version' value='3' />
+						<param name='site_root' value='' />
+						<param name='name' value='GlobalCarbonEmissionsChoroplethMap&#47;ChoroplethMap' />
+						<param name='tabs' value='no' />
+						<param name='toolbar' value='yes' />
+						<param name='static_image'
+							value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalCarbonEmissionsChoroplethMap&#47;ChoroplethMap&#47;1.png' />
+						<param name='animate_transition' value='yes' />
+						<param name='display_static_image' value='yes' />
+						<param name='display_spinner' value='yes' />
+						<param name='display_overlay' value='yes' />
+						<param name='display_count' value='yes' />
+						<param name='language' value='en-US' />
+					</object></div>
+				<script
+					type='text/javascript'>                    var divElement = document.getElementById('viz1732621703962'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+				<div class='tableauPlaceholder' style='width:100%; height:calc(100vw * 0.75);' id='viz1732622123095'
+					style='position: relative'><noscript><a href='#'><img alt='Global Carbon Emissions (Symbol Map) '
+								src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K9&#47;K953XD8Y8&#47;1_rss.png'
+								style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+						<param name='embed_code_version' value='3' />
+						<param name='path' value='shared&#47;K953XD8Y8' />
+						<param name='toolbar' value='yes' />
+						<param name='static_image'
+							value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K9&#47;K953XD8Y8&#47;1.png' />
+						<param name='animate_transition' value='yes' />
+						<param name='display_static_image' value='yes' />
+						<param name='display_spinner' value='yes' />
+						<param name='display_overlay' value='yes' />
+						<param name='display_count' value='yes' />
+						<param name='language' value='en-US' />
+					</object></div>
+				<script
+					type='text/javascript'>                    var divElement = document.getElementById('viz1732622123095'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			</div>
 		</section>
 
 		<!-- Intro 2 -->
