@@ -64,6 +64,51 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+.content {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: #59A1AF;
+  font-weight: bold;
+}
+
+p {
+  color: #141414;
+  font-size: 14pt;
+}
+
+a:link {
+  color: #59A1AF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #59A1AF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #59A1AF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #59A1AF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+ul {
+  color: #59A1AF;
+}
+
 mark {
 	background-color: transparent;
 	color: inherit;
