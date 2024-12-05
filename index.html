@@ -408,13 +408,18 @@
 	<!-- section 3 -->
 	<section
 		class="banner style1 orient-left content-align-left image-position-right onload-image-fade-in onload-content-fade-right"
-		style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; height: 30vh; padding-left: 10px; padding-right: 10px; overflow: hidden;">
+		style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; height: auto; padding-left: 10px; padding-right: 10px; overflow: hidden;">
 		<div class="content" style="text-align: center; padding-left: 10px; padding-right: 10px;">
 			<p style="font-size: 20px;">Around 2004, the carbon emissions produced from the consumption of petroleum and
 				coal
 				started to reduce, whereas the carbon emissions produced from the consumption of natural gas began to
 				increase. Therefore, we further explored the percentage change of carbon emissions of each state by fuel
 				type.</p>
+			<p style="font-size: 20px;">The three hex maps reveal that most states opted to switch from petroleum and
+				coal to natural gas. Coal, in particular, was phased out by many states. However, it is worth noting
+				that carbon emissions are not drastically decreasing because of less consumption. Instead, the decrease
+				is likely attributed to a different and slightly more “cleaner” type of fuel (natural gas) being
+				consumed. </p>
 		</div>
 	</section>
 
@@ -423,16 +428,18 @@
 		class="banner style1 orient-left content-align-left image-position-right onload-image-fade-in onload-content-fade-right"
 		style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
 		<!-- Left section for content -->
-		<div class="content" style="flex: 1; text-align: left;">
+		<!-- <div class="content" style="flex: 1; text-align: left;">
 			<p style="font-size: 20px;">The three hex maps reveal that most states opted to switch from petroleum and
 				coal to natural gas. Coal, in particular, was phased out by many states. However, it is worth noting
 				that carbon emissions are not drastically decreasing because of less consumption. Instead, the decrease
 				is likely attributed to a different and slightly more “cleaner” type of fuel (natural gas) being
 				consumed. </p>
-		</div>
+		</div> -->
 
-		<!-- Right section for Tableau charts -->
-		<div class="charts" style="flex: 2; display: flex; flex-direction: column; gap: 20px;">
+		<!-- Section for Tableau charts -->
+		<div class="charts"
+			style="flex: 2; display: flex; flex-direction: column; gap: 20px; justify-content: center; padding-left: 15%;">
+			<!-- 这里添加了 padding-left 来控制左边空白 -->
 			<!-- Updated Tableau Chart 1 -->
 			<div class="tableauPlaceholder" style="width: 70%; height: 70%;" id="viz1733351398383">
 				<noscript>
@@ -514,23 +521,22 @@
 				</object>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var tableauDivs = [
+				document.getElementById('viz1733351398383'),
+				document.getElementById('viz1733351568942'),
+				document.getElementById('viz1733351648419')
+			];
+			tableauDivs.forEach(function (divElement) {
+				var vizElement = divElement.getElementsByTagName('object')[0];
+				vizElement.style.width = '200%';
+				vizElement.style.height = '900px';
+				var scriptElement = document.createElement('script');
+				scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+				vizElement.parentNode.insertBefore(scriptElement, vizElement);
+			});
+		</script>
 	</section>
-	<script type="text/javascript">
-		var tableauDivs = [
-			document.getElementById('viz1733351398383'),
-			document.getElementById('viz1733351568942'),
-			document.getElementById('viz1733351648419')
-		];
-		tableauDivs.forEach(function (divElement) {
-			var vizElement = divElement.getElementsByTagName('object')[0];
-			vizElement.style.width = '100%';
-			vizElement.style.height = '600px';
-			var scriptElement = document.createElement('script');
-			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-			vizElement.parentNode.insertBefore(scriptElement, vizElement);
-		});
-	</script>
-
 
 
 	<section
@@ -538,26 +544,40 @@
 		style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding-left: 10px; padding-right: 10px;">
 		<div class="content" style="flex: 2; text-align: left; padding-left: 10px; padding-right: 10px;">
 			<p style="font-size: 20px;">In recent years, the car industry has advocated for a new switch: the switch
-				from conventional fossil fuel cars to electric vehicles. The argument for electric vehicles is they have
-				a lower carbon footprint than fossil fuel cars. The following two charts demonstrate the comparison of
+				from conventional fossil fuel cars to electric vehicles. The argument for electric vehicles is they
+				have
+				a lower carbon footprint than fossil fuel cars. The following two charts demonstrate the comparison
+				of
 				the percentage change in the number of registered electric vehicles, fossil fuel vehicles, and
-				transport-related emissions in the 50 states and DC from 2016 to 2022. Surprisingly, all 50 states and
-				DC have increased the number of registered electric vehicles, but not all of them have seen a decrease
+				transport-related emissions in the 50 states and DC from 2016 to 2022. Surprisingly, all 50 states
+				and
+				DC have increased the number of registered electric vehicles, but not all of them have seen a
+				decrease
 				in transport-related emissions nor registered fossil fuel vehicles during the same time period.</p>
-			<p style="font-size: 20px;">As of 2024, 24 states and DC have pledged to achieve 100% clean energy goals. We
+			<p style="font-size: 20px;">As of 2024, 24 states and DC have pledged to achieve 100% clean energy
+				goals. We
 				decided to color them green and the other 26 states red. We expected green states to have more
-				registered electric vehicles (more green dots at the top in the left chart) and less registered fossil
-				fuel vehicles than the red states (more red dots at the top in the right chart), but were surprised to
-				find the absence of a clear distinction between the two types of states. In fact, the majority of the
-				green states increased their number of registered fossil fuel vehicles, though some managed to decrease
+				registered electric vehicles (more green dots at the top in the left chart) and less registered
+				fossil
+				fuel vehicles than the red states (more red dots at the top in the right chart), but were surprised
+				to
+				find the absence of a clear distinction between the two types of states. In fact, the majority of
+				the
+				green states increased their number of registered fossil fuel vehicles, though some managed to
+				decrease
 				their transport-related emissions during the same time frame.
 
-				Although we do see more green states to the left of the charts, indicating that they have reduced their
+				Although we do see more green states to the left of the charts, indicating that they have reduced
+				their
 				transport-related emissions from 2016 to 2022, we should be aware that “the COVID effect” has almost
-				always been present throughout our emissions charts, namely a dip followed around a bounceback in the
-				years 2019–2022. In fact, time is so relative in charts that it could be deceptive. If we looked closely
-				at the carbon emission by fuel type chart, we would notice that both the carbon emissions based on the
-				consumption of petroleum and fuel have increased since 1970. Although the carbon emissions based on the
+				always been present throughout our emissions charts, namely a dip followed around a bounceback in
+				the
+				years 2019–2022. In fact, time is so relative in charts that it could be deceptive. If we looked
+				closely
+				at the carbon emission by fuel type chart, we would notice that both the carbon emissions based on
+				the
+				consumption of petroleum and fuel have increased since 1970. Although the carbon emissions based on
+				the
 				consumption of petroleum has decreased since 2004, it has not returned to the 1970-level. </p>
 		</div>
 
@@ -900,21 +920,29 @@
 				and examines how policy, technological innovation, and societal shifts can effectively reduce carbon
 				footprints. Overall, annual global carbon dioxide levels continue to rise at a steady rate. However,
 				positive
-				changes have been made by many countries to reduce their emissions, including the US, with the adoption
+				changes have been made by many countries to reduce their emissions, including the US, with the
+				adoption
 				of
 				varying green policies. Most of the US's green policies are related to trade and energy regulations,
 				while
-				very few are targeted towards the residential sector. Furthermore, individual carbon footprints, even in
-				the US, have a relatively minimal effect on the overall global CO2 levels in the face of the top 1% and
+				very few are targeted towards the residential sector. Furthermore, individual carbon footprints,
+				even in
+				the US, have a relatively minimal effect on the overall global CO2 levels in the face of the top 1%
+				and
 				global
 				trade and energy needs.
 				<br>
-				This highlights that reducing carbon emissions requires more than just isolated efforts from individual
-				countries or people. To achieve meaningful emissions reductions, a more collaborative global approach is
-				necessary, with stronger international policies and faster adoption of clean energy. Additionally, while
-				your individual lifestyle changes might have a small impact, adoption of such changes on a large scale
+				This highlights that reducing carbon emissions requires more than just isolated efforts from
+				individual
+				countries or people. To achieve meaningful emissions reductions, a more collaborative global
+				approach is
+				necessary, with stronger international policies and faster adoption of clean energy. Additionally,
+				while
+				your individual lifestyle changes might have a small impact, adoption of such changes on a large
+				scale
 				may
-				see significant results. With the looming threat of global warming, you must ask yourself if this is a
+				see significant results. With the looming threat of global warming, you must ask yourself if this is
+				a
 				cause
 				worth dedicating your efforts towards, no matter how small.
 			</p>
@@ -926,7 +954,8 @@
 		<div style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8;">
 			<h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">About the Data</h2>
 			<p style="font-size: 20px; color: #333;">
-				Data and information in Overview of Global Carbon Emissions section is sourced from the Global Carbon
+				Data and information in Overview of Global Carbon Emissions section is sourced from the Global
+				Carbon
 				Atlas, which provides carbon emissions data
 				aggregated by country and region. For this part, three datasets from the source was processed and
 				merged to highlight
@@ -959,7 +988,8 @@
 						[7] Energy-Related CO2 Emission Data Tables CO2 Summary tables</a></li>
 				<!-- Alex's sources -->
 				<li><a href="https://pubs.acs.org/doi/10.1021/es102221h" style="color: #1a73e8;">
-						[8] Quantifying Carbon Footprint Reduction Opportunities for U.S. Households and Communities</a>
+						[8] Quantifying Carbon Footprint Reduction Opportunities for U.S. Households and
+						Communities</a>
 				</li>
 				<li><a href=https://coolclimate.org/calculator" style="color: #1a73e8;">
 						[9] CoolClimate Network Calculator</a></li>
